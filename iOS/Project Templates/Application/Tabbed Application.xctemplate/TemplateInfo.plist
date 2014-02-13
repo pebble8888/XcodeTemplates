@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.storyboardApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>___VARIABLE_classPrefix:identifier___FirstViewController.m:private</key>
+		<string>@interface ___VARIABLE_classPrefix:identifier___FirstViewController ()
+
+@end
+</string>
+		<key>___VARIABLE_classPrefix:identifier___SecondViewController.m:private</key>
+		<string>@interface ___VARIABLE_classPrefix:identifier___SecondViewController ()
+
+@end
+</string>
+	</dict>
+	<key>Description</key>
+	<string>This template provides a starting point for an application that uses a tab bar. It provides a user interface configured with a tab bar controller, and view controllers for the tab bar items.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.tabbedApplication</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>___VARIABLE_classPrefix:identifier___FirstViewController.h:viewControllerInterface</string>
+		<string>___VARIABLE_classPrefix:identifier___FirstViewController.m:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___FirstViewController.m:import:___VARIABLE_classPrefix:identifier___FirstViewController.h</string>
+		<string>___VARIABLE_classPrefix:identifier___FirstViewController.m:private</string>
+		<string>___VARIABLE_classPrefix:identifier___FirstViewController.m:implementation:initSection</string>
+		<string>___VARIABLE_classPrefix:identifier___FirstViewController.m:implementation:viewDidLoad</string>
+		<string>___VARIABLE_classPrefix:identifier___FirstViewController.m:implementation:didReceiveMemoryWarning</string>
+		<string>___VARIABLE_classPrefix:identifier___SecondViewController.h:viewControllerInterface</string>
+		<string>___VARIABLE_classPrefix:identifier___SecondViewController.m:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___SecondViewController.m:import:___VARIABLE_classPrefix:identifier___SecondViewController.h</string>
+		<string>___VARIABLE_classPrefix:identifier___SecondViewController.m:private</string>
+		<string>___VARIABLE_classPrefix:identifier___SecondViewController.m:implementation:initSection</string>
+		<string>___VARIABLE_classPrefix:identifier___SecondViewController.m:implementation:viewDidLoad</string>
+		<string>___VARIABLE_classPrefix:identifier___SecondViewController.m:implementation:didReceiveMemoryWarning</string>
+		<string>___PACKAGENAME___-Info.plist:statusBarTintForNavBar</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>universalDeviceFamily</string>
+			<key>Units</key>
+			<dict>
+				<key>Universal</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main_iPad.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPad.storyboard</string>
+						</dict>
+						<key>Base.lproj/Main_iPhone.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPhone.storyboard</string>
+						</dict>
+						<key>Images.xcassets</key>
+						<dict>
+							<key>Path</key>
+							<string>Images-Universal.xcassets</string>
+							<key>SortOrder</key>
+							<integer>100</integer>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPad</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPad.storyboard</string>
+						</dict>
+						<key>Images.xcassets</key>
+						<dict>
+							<key>Path</key>
+							<string>Images-iPad.xcassets</string>
+							<key>SortOrder</key>
+							<integer>100</integer>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPhone</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPhone.storyboard</string>
+						</dict>
+						<key>Images.xcassets</key>
+						<dict>
+							<key>Path</key>
+							<string>Images-iPhone.xcassets</string>
+							<key>SortOrder</key>
+							<integer>100</integer>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>SortOrder</key>
+	<integer>1</integer>
+</dict>
+</plist>

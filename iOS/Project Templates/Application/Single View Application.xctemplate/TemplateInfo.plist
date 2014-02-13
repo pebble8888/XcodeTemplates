@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.storyboardApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>___VARIABLE_classPrefix:identifier___ViewController.m:private</key>
+		<string>@interface ___VARIABLE_classPrefix:identifier___ViewController ()
+
+@end
+</string>
+	</dict>
+	<key>Description</key>
+	<string>This template provides a starting point for an application that uses a single view. It provides a view controller to manage the view, and a storyboard or nib file that contains the view.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.singleViewApplication</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.h:viewControllerInterface</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:import:___VARIABLE_classPrefix:identifier___ViewController.h</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:private</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:viewDidLoad</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:didReceiveMemoryWarning</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>universalDeviceFamily</string>
+			<key>Units</key>
+			<dict>
+				<key>Universal</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main_iPad.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPad.storyboard</string>
+						</dict>
+						<key>Base.lproj/Main_iPhone.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPhone.storyboard</string>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPad</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPad.storyboard</string>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPhone</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPhone.storyboard</string>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>SortOrder</key>
+	<integer>1</integer>
+</dict>
+</plist>

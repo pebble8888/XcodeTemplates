@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.storyboardApplication</string>
+		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>___PACKAGENAME___-Info.plist:statusBarTintForNavBar</key>
+		<string>&lt;key&gt;UIStatusBarTintParameters&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;UINavigationBar&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt;Style&lt;/key&gt;
+        &lt;string&gt;UIBarStyleBlack&lt;/string&gt;
+        &lt;key&gt;Translucent&lt;/key&gt;
+        &lt;false/&gt;
+    &lt;/dict&gt;
+&lt;/dict&gt;
+</string>
+		<key>___VARIABLE_classPrefix:identifier___FlipsideViewController.h</key>
+		<dict>
+			<key>Path</key>
+			<string>FlipsideViewController.h</string>
+		</dict>
+		<key>___VARIABLE_classPrefix:identifier___FlipsideViewController.m:implementation:Actions</key>
+		<string>#pragma mark - Actions
+
+- (IBAction)done:(id)sender
+{
+    [self.delegate flipsideViewControllerDidFinish:self];
+}
+</string>
+		<key>___VARIABLE_classPrefix:identifier___FlipsideViewController.m:implementation:initSection:initViewController:contentSizeForViewInPopover</key>
+		<string>self.preferredContentSize = CGSizeMake(320.0, 480.0);</string>
+		<key>___VARIABLE_classPrefix:identifier___FlipsideViewController.m:private</key>
+		<string>@interface ___VARIABLE_classPrefix:identifier___FlipsideViewController ()
+
+@end
+</string>
+		<key>___VARIABLE_classPrefix:identifier___MainViewController.h:ivars</key>
+		<string>@interface ___VARIABLE_classPrefix:identifier___MainViewController : UIViewController &lt;___VARIABLE_classPrefix:identifier___FlipsideViewControllerDelegate&gt;
+</string>
+		<key>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:flipsideView</key>
+		<string>#pragma mark - Flipside View
+
+- (void)flipsideViewControllerDidFinish:(___VARIABLE_classPrefix:identifier___FlipsideViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+</string>
+		<key>___VARIABLE_classPrefix:identifier___MainViewController.m:private</key>
+		<string>@interface ___VARIABLE_classPrefix:identifier___MainViewController ()
+
+@end
+</string>
+	</dict>
+	<key>Description</key>
+	<string>This template provides a starting point for a utility application that has a main view and an alternate view. For iPhone, it sets up an Info button to flip the main view to the alternate view. For iPad, it sets up an Info bar button that shows the alternate view in a popover.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.utilityApplication</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>___VARIABLE_classPrefix:identifier___MainViewController.h:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___MainViewController.h:import:___VARIABLE_classPrefix:identifier___FlipsideViewController.h</string>
+		<string>___VARIABLE_classPrefix:identifier___MainViewController.h:class</string>
+		<string>___VARIABLE_classPrefix:identifier___MainViewController.h:ivars</string>
+		<string>___VARIABLE_classPrefix:identifier___MainViewController.h:methods</string>
+		<string>___VARIABLE_classPrefix:identifier___MainViewController.m:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___MainViewController.m:import:___VARIABLE_classPrefix:identifier___MainViewController.h</string>
+		<string>___VARIABLE_classPrefix:identifier___MainViewController.m:private</string>
+		<string>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:initSection</string>
+		<string>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:viewDidLoad</string>
+		<string>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:didReceiveMemoryWarning</string>
+		<string>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:flipsideView</string>
+		<string>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:prepareForSegue</string>
+		<string>___VARIABLE_classPrefix:identifier___FlipsideViewController.h</string>
+		<string>___VARIABLE_classPrefix:identifier___FlipsideViewController.m:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___FlipsideViewController.m:import:___VARIABLE_classPrefix:identifier___FlipsideViewController.h</string>
+		<string>___VARIABLE_classPrefix:identifier___FlipsideViewController.m:private</string>
+		<string>___VARIABLE_classPrefix:identifier___FlipsideViewController.m:implementation:initSection</string>
+		<string>___VARIABLE_classPrefix:identifier___FlipsideViewController.m:implementation:viewDidLoad</string>
+		<string>___VARIABLE_classPrefix:identifier___FlipsideViewController.m:implementation:didReceiveMemoryWarning</string>
+		<string>___VARIABLE_classPrefix:identifier___FlipsideViewController.m:implementation:Actions</string>
+		<string>___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPhone</string>
+		<string>___PACKAGENAME___-Info.plist:statusBarTintForNavBar</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>coreData</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+						<string>___VARIABLE_classPrefix:identifier___MainViewController *controller = (___VARIABLE_classPrefix:identifier___MainViewController *)self.window.rootViewController;
+controller.managedObjectContext = self.managedObjectContext;</string>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.h:ivars</key>
+						<dict>
+							<key>Beginning</key>
+							<string>#import &lt;CoreData/CoreData.h&gt;
+
+@interface ___VARIABLE_classPrefix:identifier___MainViewController : UIViewController &lt;___VARIABLE_classPrefix:identifier___FlipsideViewControllerDelegate&gt;
+</string>
+							<key>Indent</key>
+							<integer>1</integer>
+						</dict>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:managedObjectContext</key>
+						<string>@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+</string>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:managedObjectContext</string>
+						<string>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:dealloc:_managedObjectContext</string>
+						<string>___VARIABLE_classPrefix:identifier___FlipsideViewController.m:implementation:initSection:initViewController:coreData</string>
+						<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___MainViewController.h</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>universalDeviceFamily</string>
+			<key>Units</key>
+			<dict>
+				<key>Universal</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main_iPad.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPad.storyboard</string>
+						</dict>
+						<key>Base.lproj/Main_iPhone.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPhone.storyboard</string>
+						</dict>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.h:ivars</key>
+						<string>@interface ___VARIABLE_classPrefix:identifier___MainViewController : UIViewController &lt;___VARIABLE_classPrefix:identifier___FlipsideViewControllerDelegate, UIPopoverControllerDelegate&gt;
+</string>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:flipsidePopoverController</key>
+						<string>@property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
+</string>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:showInfo</key>
+						<string>- (IBAction)togglePopover:(id)sender;
+</string>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:flipsideView</key>
+						<string>#pragma mark - Flipside View Controller
+
+- (void)flipsideViewControllerDidFinish:(___VARIABLE_classPrefix:identifier___FlipsideViewController *)controller
+{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [self.flipsidePopoverController dismissPopoverAnimated:YES];
+    }
+}
+</string>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:flipsideView - 2</key>
+						<string>#pragma mark - Flipside View Controller
+
+- (void)flipsideViewControllerDidFinish:(___VARIABLE_classPrefix:identifier___FlipsideViewController *)controller
+{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [self.flipsidePopoverController dismissPopoverAnimated:YES];
+        self.flipsidePopoverController = nil;
+    }
+}
+</string>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:prepareForSegue</key>
+						<string>- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
+{
+    self.flipsidePopoverController = nil;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showAlternate"]) {
+        [[segue destinationViewController] setDelegate:self];
+        
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+            UIPopoverController *popoverController = [(UIStoryboardPopoverSegue *)segue popoverController];
+            self.flipsidePopoverController = popoverController;
+            popoverController.delegate = self;
+        }
+    }
+}
+</string>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:togglePopover</key>
+						<string>- (IBAction)togglePopover:(id)sender
+{
+    if (self.flipsidePopoverController) {
+        [self.flipsidePopoverController dismissPopoverAnimated:YES];
+        self.flipsidePopoverController = nil;
+    } else {
+        [self performSegueWithIdentifier:@"showAlternate" sender:sender];
+    }
+}
+</string>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:flipsidePopoverController</string>
+						<string>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:dealloc:_flipsidePopoverController</string>
+						<string>___VARIABLE_classPrefix:identifier___FlipsideViewController.m:implementation:initSection:initViewController:contentSizeForViewInPopover</string>
+						<string>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:togglePopover</string>
+						<string>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:togglePopover</string>
+					</array>
+				</dict>
+				<key>iPad</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPad.storyboard</string>
+						</dict>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.h:ivars</key>
+						<string>@interface ___VARIABLE_classPrefix:identifier___MainViewController : UIViewController &lt;___VARIABLE_classPrefix:identifier___FlipsideViewControllerDelegate, UIPopoverControllerDelegate&gt;
+</string>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:flipsidePopoverController</key>
+						<string>@property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
+</string>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:showInfo</key>
+						<string>- (IBAction)togglePopover:(id)sender;
+</string>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:flipsideView</key>
+						<string>#pragma mark - Flipside View Controller
+
+- (void)flipsideViewControllerDidFinish:(___VARIABLE_classPrefix:identifier___FlipsideViewController *)controller
+{
+    [self.flipsidePopoverController dismissPopoverAnimated:YES];
+}
+</string>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:flipsideView - 2</key>
+						<string>#pragma mark - Flipside View Controller
+
+- (void)flipsideViewControllerDidFinish:(___VARIABLE_classPrefix:identifier___FlipsideViewController *)controller
+{
+    [self.flipsidePopoverController dismissPopoverAnimated:YES];
+    self.flipsidePopoverController = nil;
+}
+</string>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:prepareForSegue</key>
+						<string>- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
+{
+    self.flipsidePopoverController = nil;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showAlternate"]) {
+        [[segue destinationViewController] setDelegate:self];
+        UIPopoverController *popoverController = [(UIStoryboardPopoverSegue *)segue popoverController];
+        self.flipsidePopoverController = popoverController;
+        popoverController.delegate = self;
+    }
+}
+</string>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:togglePopover</key>
+						<string>- (IBAction)togglePopover:(id)sender
+{
+    if (self.flipsidePopoverController) {
+        [self.flipsidePopoverController dismissPopoverAnimated:YES];
+        self.flipsidePopoverController = nil;
+    } else {
+        [self performSegueWithIdentifier:@"showAlternate" sender:sender];
+    }
+}
+</string>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:flipsidePopoverController</string>
+						<string>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:dealloc:_flipsidePopoverController</string>
+						<string>___VARIABLE_classPrefix:identifier___FlipsideViewController.m:implementation:initSection:initViewController:contentSizeForViewInPopover</string>
+						<string>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:togglePopover</string>
+						<string>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:togglePopover</string>
+					</array>
+				</dict>
+				<key>iPhone</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPhone.storyboard</string>
+						</dict>
+						<key>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:prepareForSegue</key>
+						<string>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showAlternate"]) {
+        [[segue destinationViewController] setDelegate:self];
+    }
+}
+</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>SortOrder</key>
+	<integer>1</integer>
+</dict>
+</plist>
